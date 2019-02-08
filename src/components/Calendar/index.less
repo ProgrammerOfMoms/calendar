@@ -1,0 +1,81 @@
+.calendar{
+    border: 1px solid black;
+    box-shadow: 0 0 10px #3B3B3B;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //height: 200px;
+    header{
+        background-color: #2D2D2D;
+        height: 5vh;
+        width: 100%;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        button, select{
+            border: none;
+            background-color: #2D2D2D;
+            color: #fafafa;
+        }
+        // button{
+        //     &:first-child{
+        //         margin-right: 1px;
+        //     }
+        //     &:last-child{
+        //         margin-left: 1px;
+        //     }
+        // }
+        // select{
+
+        //     margin-right: 1px;
+        // }
+    }
+    .temp{
+        //background-color: #2B95DB;
+        background: linear-gradient(to top left, #006CB4 10%, #0B80CF 50%, #006CB4 90%);
+        //height: 170px;
+        width: 100%;
+        table{
+            display: flex;
+            flex-direction: column;
+            // background-color: #2B95DB;
+            // color: #2D2D2D;
+            //font-size: 1vw;
+            width: 100%;
+            thead{
+                margin-top: 5px;
+                //border-bottom: 1px solid #000;
+                tr{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    td{
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    td{
+                        margin-top: 4px;
+                        display: flex;
+                        justify-content: center;
+                        width: 5%;
+                    }
+                    .inactive{
+                        color: #fafafa;
+                    }
+                    .today{
+                        border: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+    
+}

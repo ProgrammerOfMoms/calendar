@@ -1,0 +1,59 @@
+.calendar {
+  border: 1px solid black;
+  box-shadow: 0 0 10px #3B3B3B;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendar header {
+  background-color: #2D2D2D;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.calendar header button,
+.calendar header select {
+  border: none;
+  background-color: #2D2D2D;
+  color: #fafafa;
+}
+.calendar .temp {
+  background: linear-gradient(to top left, #006CB4 10%, #0B80CF 50%, #006CB4 90%);
+  width: 100%;
+}
+.calendar .temp table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.calendar .temp table thead {
+  margin-top: 5px;
+}
+.calendar .temp table thead tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.calendar .temp table thead tr td {
+  flex-wrap: wrap;
+}
+.calendar .temp table tbody tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.calendar .temp table tbody tr td {
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+  width: 5%;
+}
+.calendar .temp table tbody tr .inactive {
+  color: #fafafa;
+}
+.calendar .temp table tbody tr .today {
+  border: 1px solid black;
+}
